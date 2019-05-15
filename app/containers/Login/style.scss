@@ -1,0 +1,64 @@
+@import 'styles/global-styles.scss';
+.block_center {
+  @include align_center;
+  padding: 30px;
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 15px;
+  }
+}
+
+.Login_main {
+  padding: 65px 30px;
+  background: $white;
+  margin: 45px !important;
+  min-width: 500px;
+  @media screen and (max-width: 520px) {
+    max-width: 100%;
+    min-width: auto;
+    margin: 5px !important;
+    padding: 35px 20px;
+  }
+  @include box_shadow(0, 1px, 6px, rgba($black, 0.16));
+  .Login {
+    max-width: 300px;
+    margin: 0 auto;
+    .Login_in {
+      margin-bottom: 40px;
+      .logo {
+        margin-bottom: 42px;
+        img {
+          // max-width: 170px;
+        }
+      }
+      .welcome_content {
+        margin-bottom: 30px;
+        color: $primary;
+        h2 {
+          font-weight: $font_bold;
+        }
+      }
+      .fpassword {
+        margin: 0;
+        a {
+          color: $primary;
+          font-size: 14px;
+        }
+      }
+    }
+    .login_bottom{
+        @media screen and (max-width: $screen-xs-max) {
+            margin-top: 10px;
+        }
+    }
+  }
+  .signup_text {
+    border-top: 1px solid $gray;
+    p {
+      color: $primary;
+      font-size: 14px;
+      a {
+        color: $secondary;
+      }
+    }
+  }
+}

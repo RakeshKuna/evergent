@@ -1,0 +1,66 @@
+// @font-face {
+//   font-family: 'helveticaneueregular';
+//   src: url('../fonts/HelveticaNeueRegular/helveticaneue-regular-webfont.woff2') format('woff2'),
+//        url('../fonts/HelveticaNeueRegular/helveticaneue-regular-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+h1 {
+  font-size: 28px !important;
+  line-height: 32px !important;
+  margin-bottom: 20px;
+  font-weight: $font_semi_bold !important;
+  @media(max-width: $screen-xs-max) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 24px !important;
+  line-height: 28px !important;
+  margin-bottom: 20px;
+  @media(max-width: $screen-xs-max) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 22px !important;
+  line-height: 24px !important;
+  @media(max-width: $screen-xs-max) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 18px !important;
+  line-height: 20px !important;
+  @media(max-width: $screen-xs-max) {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: $font_normal;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-weight: $font_normal;
+}
+
+body {
+  font-size: 14px;
+  font-family: $roboto;
+  font-weight: $font_normal;
+}
+// small 13px

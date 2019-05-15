@@ -1,0 +1,119 @@
+body,
+html,
+#app {
+  height: 100%;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 1000px;
+  @media (max-width: 767px) {
+    padding: 0 10px !important;
+  }
+}
+
+.no_shadow{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+//Background colors
+body,
+.whitesmoke_bg {
+  background: $whitesmoke;
+}
+
+//TextField
+.text_field {
+  [class*='MuiFilledInput-root-'] {
+    background: $primary_light !important;
+    &:hover {
+      background: $primary_light;
+    }
+  }
+  [class*='MuiFilledInput-underline-'] {
+    [class*='MuiInputBase-input-'] {
+      color: $primary;
+      font-weight: $font_semi_bold;
+    }
+    &:before {
+      border-bottom-color: $primary;
+    }
+    [class*='MuiInputAdornment-filled-'] {
+      [class*='MuiSvgIcon-root-'] {
+        font-size: 16px;
+      }
+    }
+  }
+  [class*='MuiInputLabel-filled-'] {
+    opacity: 0.5;
+    color: $primary;
+    font-weight: $font_light;
+  }
+  &.filled {
+    [class*='MuiInputLabel-formControl-'] {
+      left: -13px;
+    }
+    [class*='MuiFilledInput-root-'] {
+      background: none !important;
+      &:hover {
+        background: none;
+      }
+      [class*='MuiFilledInput-input-'] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  [class*='MuiSvgIcon-root-'] {
+    color: $primary;
+  }
+}
+
+//Button
+.btn {
+  @include border-radius(4px);
+  box-shadow: none !important;
+  text-decoration: none !important;
+  text-transform: capitalize !important;
+  @media screen and (max-width: $screen-xxs-max){
+    &.mobile_full{
+      min-width: auto;
+      width: 100%;
+    }
+  }
+}
+
+.mob-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//padding
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+
+//margin
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-30 {
+  margin-top: 30px;
+}

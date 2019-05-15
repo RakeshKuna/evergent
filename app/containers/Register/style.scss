@@ -1,0 +1,88 @@
+@import '../../styles/global-styles.scss';
+
+.block_center {
+  @include align_center;
+  padding: 30px;
+  @media screen and (max-width: $screen-xs-max){
+    padding: 15px;
+  }
+}
+.signup_main {
+  padding: 30px 35px;
+  background: $white;
+  min-width: 1000px;
+  margin: 45px !important;
+  position: relative;
+  @include box_shadow(0, 1px, 6px, rgba($black, 0.16));
+  @media screen and (max-width: 1025px) {
+    max-width: 100%;
+    min-width: auto;
+    margin: 5px !important;
+    padding: 30px 20px;
+  }
+  .logo {
+    padding-bottom: 30px;
+  }
+  .close_signup{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .signup_in {
+    max-width: 550px;
+    margin: 0 auto;
+    .welcome_content {
+      text-align: center;
+      margin-bottom: 40px;
+      @media screen and (max-width: $screen-xs-max){
+        text-align: left;
+      }
+      p {
+        color: $primary;
+      }
+    }
+    .sign_btn {
+      text-align: center;
+      margin-top: 40px;
+      @media screen and  (max-width: $screen-xxs-max){
+        margin-top: 30px;
+      }
+      .signup {
+        min-width: 150px;
+      }
+    }
+    .term_cond {
+      text-align: center;
+      color: $primary;
+      opacity: 0.5;
+      @media screen and  (max-width: $screen-xxs-max){
+        text-align: left;
+      }
+    }
+    .sign_bottom {
+      text-align: center;
+      min-width: 300px;
+      @media screen and  (max-width: $screen-xxs-max){
+        min-width: auto;
+        width: 100%;
+        text-align: left;
+      }
+      border-top: 1px solid $gray;
+      p {
+        color: $primary;
+        a {
+          color: $secondary;
+        }
+      }
+    }
+    .signup_sucess{
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .check_icon{
+        margin-bottom: 30px;
+        cursor: default;
+      }
+    }
+    
+  }
+}
